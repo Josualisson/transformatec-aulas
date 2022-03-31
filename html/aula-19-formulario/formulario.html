@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário 2 - criando </title>
+</head>
+<body>
+
+    <!--
+            Algumas observações:
+            required="true" - faz com que não prossiga se o campo estiver vazio
+
+
+    -->
+    <p>Ao submeter o formulário, é retornada uma mensagem</p>
+
+    <form action="" onsubmit="myFunction()" method="POST">
+    
+      Seu nome: <input type="text" name="fname" id="fname" required="true">
+      
+      <br>
+      
+      Seu sobrenome: <input type="text" name="lname" id="lname" required="true">
+      
+      <br>
+      
+      Sua idade: <input type="number" name="age" id="age" required="true">
+     
+      <br>
+      
+      Aceitar termos: <input type="checkbox" id="agree" value="accept" required="true">
+      
+      <br>
+      
+      Data de nascimento: <input type="date" id="bdate" required="true">
+      
+      <br>
+      
+       <input type="submit" value="Enviar">
+      
+    </form>
+    
+    <script>
+    
+    function myFunction() {
+    
+       var nome = document.getElementById("fname").value;
+       var sobrenome = document.getElementById("lname").value;
+       var idade = document.getElementById("age").value;
+       var dataNasc = document.getElementById("bdate").value
+       
+       alert("Nome: "+ nome + " " + sobrenome + "\nIdade: " + idade + "\nData de nascimento: " + dataNasc);
+    }
+    
+    </script>
+    
+
+</body>
+</html>
