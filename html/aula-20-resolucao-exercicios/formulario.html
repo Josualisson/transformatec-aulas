@@ -10,91 +10,109 @@
    <h1>Formulário de cadastro</h1>
 <form action="sucesso.html">
     <table>
-    <tr>
-        <td><label for="Nome">Nome</label></td>
-    </tr>
+        <!-- Nome -->
+        <tr>
+            <td>
+                <label for="Nome">Nome</label>
+            </td>
+        </tr>
 
-    <tr>
-        <td><input type="text" id="nome" required="true"></td>
-    </tr>
-    <tr>
-        <td>
-            <label for="sobrenome">Sobrenome</label>
-        </td>
-    </tr>
+        <tr>
+            <td>
+                <input type="text" id="nome" required="true">
+            </td>
+        </tr>
+            <!-- Sobrenome  -->
+        <tr>
+            <td>
+                <label for="sobrenome">Sobrenome</label>
+            </td>
+        </tr>
 
-    <tr>
-        <td>
-            <input type="text" name="sobrenome" id="">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="endereco">Endereço</label>
-        </td>
-    </tr>
+        <tr>
+            <td>
+                <input type="text" name="sobrenome" id="">
+            </td>
+        </tr>
+            <!-- Endereço  -->
+        <tr>
+            <td>
+                <label for="endereco">Endereço</label>
+            </td>
+        </tr>
+        <!-- Descrição  -->
+        <tr>
+            <td>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <!-- Disciplina  -->
+        <tr>
+            <td>
+                <Label>Disciplina</Label>   
+            </td>
 
-    <tr>
-        <td>
-            <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <Label>Disciplina</Label>   
-        </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="disciplinas">Disciplinas</label>
+            </td>
+            <!-- Checkbox disciplinas  -->
+            <td>
+                <input type="checkbox" />Programação <br />
+                <input type="checkbox" />Lógica<br />
+                <input type="checkbox" />Algoritmos<br />
+                <input type="checkbox" />Banco de Dados<br />
+                <input type="checkbox" />Mobile
+            </td>
+        </tr>
 
-    </tr>
-    <tr>
-        <td><label for="disciplinas">Disciplinas</label></td>
-        <td>
-            <input type="checkbox" />Programação <br />
-            <input type="checkbox" />Lógica<br />
-            <input type="checkbox" />Algoritmos<br />
-            <input type="checkbox" />Banco de Dados<br />
-            <input type="checkbox" />Mobile
-        </td>
-    </tr>
+        <!--  Gênero   -->
+        <tr>
+            <td>
+                <label for="genero">Gênero</label>
+            </td>
 
-    <tr>
-        <td><label for="genero">Gênero</label></td>
-        <td>
-            <input type="radio" name="" id="" /><label >Masculino</label>
-            <br>
-            <input type="radio" name="" id="" /><label >Feminino</label>
-            <br>
-            <input type="radio" name="" id=""/><label >Não informar</label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="idade">Idade</label>
-        </td>
-    </tr>
-    <tr>
-        <td>
-           <input type="date" name="" id="">
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <label for="">Foto do Perfil</label>
-        </td>
-    </tr>
-    
+            <!-- Checkbox - Gênero  -->
+            <td>
+                <input type="radio" name="" id="" /><label >Masculino</label>
+                <br>
+                <input type="radio" name="" id="" /><label >Feminino</label>
+                <br>
+                <input type="radio" name="" id=""/><label >Não informar</label>
+            </td>
+        </tr>
 
-    <tr>
-        <td>
-            <input type="file" name="" id="">
-        </td>
-    </tr>
+        <!-- Idade  -->
+        <tr>
+            <td>
+                <label for="idade">Idade</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="date" name="" id="">
+            </td>
+        </tr>
 
-    <tr>
-        <td>
-            <input type="submit" value="Cadastrar">
-            <input type="reset" value="limpar">
-        </td>
-    </tr>
+        <!-- Foto do perfil  -->
+        <tr>
+            <td>
+                <label for="">Foto do Perfil</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="file" name="" id="">
+            </td>
+        </tr>
+        <!-- Submit - confirmar / reset - limpar  -->
+        <tr>
+            <td>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="limpar">
+            </td>
+        </tr>
 
 </table>
 </form>
