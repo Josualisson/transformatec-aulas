@@ -9,6 +9,7 @@
 <body>
    <h1>Formulário de cadastro</h1>
 <form action="sucesso.html">
+
     <table>
         <!-- Nome -->
         <tr>
@@ -109,10 +110,16 @@
         <!-- Submit - confirmar / reset - limpar  -->
         <tr>
             <td>
-                <input type="submit" value="Cadastrar">
+                <input type="submit" onclick="sucesso()" value="Cadastrar">
                 <input type="reset" value="limpar">
             </td>
         </tr>
+            
+        <script>
+            function sucesso() {
+                alert("Sucesso")
+            }
+        </script>
 
 </table>
 </form>
