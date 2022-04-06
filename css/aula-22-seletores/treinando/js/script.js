@@ -1,0 +1,3 @@
+function checkado(){
+    alert("Sucesso!")
+}
