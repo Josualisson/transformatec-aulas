@@ -1,0 +1,18 @@
+body {
+    background-color:bisque;
+}
+/*Intervalo de resolução de largura*/
+@media only screen and  (min-width: 400px) and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    p{
+        color:chocolate
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px){
+    body {
+        background-color: lightgreen;
+    }
+}
