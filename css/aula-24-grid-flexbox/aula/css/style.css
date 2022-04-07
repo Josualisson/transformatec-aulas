@@ -1,0 +1,28 @@
+.a{
+    background-color:bisque
+}
+.b{
+    background-color:lightblue
+}
+.c{
+    background-color:linen
+}
+.d{
+    background-color:burlywood
+}
+.e{
+    background-color:bisque
+}
+.f{
+    background-color:lightblue
+}
+.container{
+    display:grid;
+    grid-template-rows: 150px;
+    grid-template-columns: 150px 50px 50px;
+    grid-gap: 10px;
+    background-color: cadetblue;
+}
+.element{
+    font-size: 150%;
+}
