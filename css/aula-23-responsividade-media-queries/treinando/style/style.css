@@ -1,0 +1,130 @@
+/* *{
+    box-sizing: border-box;
+} */
+body{
+    background-color: bisque;
+}
+/* header{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+} */
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 8px;
+    /* idth: 99%; */
+    margin: 8px 7px 7px;
+    height: 7rem;
+    background-color: #FF7F50;
+}
+h1{
+    margin-left: 10px;
+    color: #FAEBD7;
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+}
+li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: cornflowerblue;
+    width: 20rem;
+    height: 35px;
+    margin-top: 7px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+li:hover{
+    background-color: #ADD8E6;
+}
+
+.texto{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    width: 60%;
+}
+.texto-p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5F9EA0;
+    height: 5rem;
+    width: 98%;
+    color: #FAEBD7;
+    font-size: 20px;
+}
+p{
+    margin-left: 10px;
+}
+
+.titulo{
+    padding: 0;
+    margin: 0;
+    background-color: #5F9EA0;
+    width: 30%;
+}
+.titulo1{
+    text-align: center;
+    color: chocolate;
+}
+
+footer .rodapé{
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    height: 40px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    flex-direction: column;
+}
+footer{
+    margin-top:20px
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background: darkseagreen;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    .itens{
+        width: 100%;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .itens1{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        width: 100%;
+    }
+    ul{
+        margin-right: 30px;
+        width: 100%;
+    }
+    
+    li{
+        width: 100%;
+    }
+    .texto{
+        width: 100%;
+    }
+    .texto-p{
+        width: 100%;
+    }
+    .titulo{
+        margin-top: 15px;
+        width: 100%;
+    }
+}
