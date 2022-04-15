@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+body{  
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items:start;
+    width: 35rem;
+    font-size: 30px;
+    margin-bottom: 10rem;
+    margin-right: 10rem;
+}
+.left img {
+    width: 20rem;
+    font-size: 40rem;
+}
+
+.right-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21rem;
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.right input{
+    margin-top: 15px;
+    padding: 0.9rem;
+    width: 20rem;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid #999;
+    font-size: 15px;
+}
+/* faz com que quando clique no input ele mude de cor */
+form input:focus{
+    border: 1px solid #1877f2;
+}
+input::placeholder{
+    font-size: 15px;
+    text-justify: center;
+}
+.right {
+    width:24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Botões  */
+
+.right-in__btn{
+    margin-top: 15px;
+    text-decoration: none;
+    color: white;
+    background-color: #1877f2;
+    width: 20rem;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.right-in__btn--hover:hover{
+    background-color: #122eaa;
+    transition: 0.5s;
+}
+.forget__rightBtn{
+    margin-top: 15px;
+    color: #1877f2;
+    font-size: 16px;
+    text-decoration: none;
+}
+.forget__rightBtn:hover{
+    text-decoration: underline;
+}
+hr{
+    margin-top: 15px;
+    height: 1px;
+    width:90%;
+    background-color: #dad9d9;
+    border: none;
+}
+.create-accountBtn{
+    margin-top: 15px;
+    text-decoration: none;
+    background-color: #42b72a;
+    width: 50%;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.create-accountBtn--hover:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+.right p {
+    margin-top: 30px;
+}
+.right strong a{
+    text-decoration: none;
+    color: black;
+}
+.right strong a:hover{
+    text-decoration: underline;
+}
