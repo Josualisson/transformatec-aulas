@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    font-size: 30px;
+    margin-bottom: 10rem;
+    margin-right: 10rem;
+}
+
+.left img{
+    width: 20rem;
+}
+
+.right{
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.right-in{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 21rem;
+    width: 25rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.right input{
+    margin-top: 15px;
+    padding: 0.9rem;
+    width: 20rem;
+    border: 1px solid #999;
+    font-size: 15px;
+    outline: none;
+    border-radius: 6px;
+}
+.right input:focus{
+    border: 1px solid #1877f2;
+}
+input::placeholder{
+    font-size: 15px;
+}
+
+/* Botões  */
+
+.right-in__btn{
+    text-decoration: none;
+    color: white;
+    background-color: #1877f2;
+    width: 20rem;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+.right-in__btn--hover:hover{
+    background-color: #122eaa;
+    transition: 0.5s;
+}
+.forget__rightBtn{
+    margin-top: 15px;
+    color: #1877f2;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.forget__rightBtn--hover:hover{
+    text-decoration: underline;
+}
+hr{
+    background-color: #dad9d9;
+    margin-top: 15px;
+    height: 1px;
+    width: 90%;
+    border: none;
+}
+.create-accountBtn{
+    margin-top: 15px;
+    text-decoration:none;
+    background-color: #42b72a;
+    width: 50%;
+    padding: 0.9rem;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+.create-accountBtn--hover:hover{
+    background-color: green;
+    transition: 0.5s;
+}
+
+.right p{
+    margin-top: 30px;
+}
+.right strong a{
+    text-decoration: none;
+    color: black;
+}
+.right strong a:hover{
+    text-decoration: underline;
+}
