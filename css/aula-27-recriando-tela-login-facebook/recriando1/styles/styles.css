@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -120,4 +121,31 @@ hr{
 }
 .right strong a:hover{
     text-decoration: underline;
+}
+@media only screen and (max-width: 800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .left{
+        margin-top: -50rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40%;
+    }
+    .left p{
+        text-align: center;
+        font-size: 30px;
+        width: 80%;
+    }
+
+    .right{
+        margin-bottom: -60rem;
+        margin-top: -100px;
+    }
+
 }
