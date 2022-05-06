@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <p class="text" id="p1">
+            Título
+        </p>
+        <div class="forms" id="forms">
+            <input type="text" name="name" id="name" placeholder="Nome">
+            <input type="text" name="age" id="age" placeholder="Idade">
+        </div>
+        <div class="submit" id="submit">
+            <button id="submit" onclick="hello()">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        function hello(){
+            console.log("Hello!")
+
+            var name = document.getElementById("name").value
+            var age = document.getElementById("age").value
+
+            console.log("olá", name, " sua idade é", age)
+        }
+    </script>
+</body>
+</html>
