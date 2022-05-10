@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mudar a cor</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: column;
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+        }
+        p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <button onclick="btn1()">Cor vermelha</button>
+    <button onclick="btn2()">Cor Laranja</button>
+    <button onclick="btn3()">Cor Verde</button>
+    <input type="color" name="color" id="escolherCor">
+    <input type="submit" value="escolher cor de fundo da página" onclick="escolher()">
+
+    <input type="color" name="" id="letraColor">
+    <input type="submit" value="escolher cor da letra" onclick="escolherLetra()">
+
+    <p id="letra">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur hic impedit, nihil harum odit earum iste deleniti dolores sit provident iure, esse atque unde doloremque necessitatibus reiciendis magnam mollitia voluptas. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet debitis reiciendis esse, nisi delectus adipisci possimus sequi eaque dignissimos at ad repellat facilis eligendi corrupti sunt incidunt inventore, reprehenderit alias?</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
