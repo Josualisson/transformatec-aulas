@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="email" placeholder="Email">
+        <input type="password" id="senha" placeholder="Senha">
+        <input type="submit" value="Fazer Login" id="login">
+    </div>
+    <p id="resposta"></p>
+
+
+
+    <script>
+
+
+
+        document.getElementById("login").addEventListener("click", () => {
+            let emailEmpresa = "josualisson17@gmail.com";
+            let senhaEmpresa = "123456"
+
+            let email = document.getElementById("email").value
+            let senha = document.getElementById("senha").value
+            let resposta = document.getElementById("resposta")
+
+             if(emailEmpresa == email && senhaEmpresa == senha){
+                resposta.innerHTML = "Acesso concedido com sucesso!"
+            }else if(senha.length > 6){
+                resposta.innerHTML = "senha incorreta, menos caracter!"
+            }else if (senha.length < 6){
+                resposta.innerHTML = "senha incorreta, mais caracter!"
+            }else if (email != emailEmpresa && senha == senhaEmpresa){
+                resposta.innerHTML = "Email incorreto!"
+            }
+            })
+
+
+    </script>
+</body>
+</html>

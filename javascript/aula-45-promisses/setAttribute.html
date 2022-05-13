@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>setAttribute</title>
+    <style>
+        .tmj{
+            color: red;
+        }
+        .tmj1{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="cor">ao clicar isso aqui vai mudar de cor após 10 segundos</h1>
+
+    <input type="submit" value="Mudar cor" onclick="mudarCor()">
+
+    <input type="submit" name="" value="Remover cor" id="noturno" onclick="voltarCor()">
+
+    <script>
+        var cor = document.getElementById("cor")
+         function mudarCor(voltarCor){
+            
+            setTimeout(() => {
+                cor.setAttribute("class", "tmj");
+            }, 2000);
+
+               return  voltarCor = cor.removeAttribute("class", "tmj");
+         }
+         function voltarCor(){
+                cor.removeAttribute("class", "tmj")
+            }
+    </script>
+</body>
+</html>
