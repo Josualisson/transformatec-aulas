@@ -4,7 +4,6 @@ var paragrafo = document.getElementById("media").innerHTML = "Resultado: "
 
 function mediaAluno(){
 
-
     var n1 = document.getElementById("nota1").value
     n1 = Number(n1)
     var n2 = document.getElementById("nota2").value

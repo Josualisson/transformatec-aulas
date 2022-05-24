@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Teste Fetch - ViaCEP</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+
+    const viacep_url = "https://viacep.com.br/ws/85869747/json/"
+
+
+    fetch(viacep_url)
+    .then( 
+        function(response){
+            return response.json()
+        }
+    ).then(
+        (json) => {
+            //console.log(json)
+
+            let endereco = JSON.stringify(json)
+            
+            console.log("Rua: ", json.logradouro)
+            console.log("Cidade: ", json.localidade)
+            console.log("Bairro: ", json.bairro)
+            console.log("CEP: ", json.cep)
+        }
+    )
+
+</script>
+    
+
+
+</html>

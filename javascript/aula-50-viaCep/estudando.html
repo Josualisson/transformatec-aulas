@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="cep" placeholder="Digite seu CEP">
+    <input type="submit" value="Pesquisar" onclick="pesquisar()">
+    <p id="rua"></p>
+    <p id="bairro"></p>
+    <p id="cidade"></p>
+    <p id="estado"></p>
+</body>
+<script>
+function pesquisar(){
+    console.log("clicado")
+    let aparecer = document.getElementById("aparecer");
+    let cep = document.getElementById("cep").value;
+    const viacep_url = `https://viacep.com.br/ws/${cep}/json/`
+    const encoded = encodeURI(viacep_url);
+    
+    fetch(viacep_url)
+    .then(response => response.json()) 
+    .then((json) => {
+        let jsonString = JSON.stringify(json)
+        let rua = document.getElementById("rua")
+        let bairro = document.getElementById("bairro")
+        let cidade = document.getElementById("cidade")
+        let estado = document.getElementById("estado")
+        setTimeout(() => {
+            rua.innerHTML = "Rua: " + json.logradouro
+        }, 1000);
+        setTimeout(() => {
+            bairro.innerHTML = "Bairro: " + json.bairro
+        }, 2000)
+        setTimeout(() => {
+            cidade.innerHTML = "Cidade: " + json.localidade
+        }, 3000)
+
+        setTimeout(() => {
+            estado.innerHTML = "Estado: " + json.uf
+        },4000)
+    })
+    .catch(err => rua.innerHTML = err)
+
+}
+
+</script>
+</html>
