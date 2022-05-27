@@ -1,0 +1,34 @@
+import '../App.css';
+import React from 'react';
+
+class stateClock extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            time: new Date()
+        }
+        this.timerID = null;
+    }
+    tickTack(){
+        this.setState({
+            time: new Date()
+        })
+    }
+
+    componentDidMount() {
+        this.timer = setInterval(
+            () => this.tickTack(),
+            1000
+        )
+    }
+
+    render() {
+        return (
+            <h2>
+                {this.state.time.toLocaleTimeString()}
+            </h2>
+        )
+    }
+}
+
+export default stateClock;
