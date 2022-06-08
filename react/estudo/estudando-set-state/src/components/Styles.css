@@ -1,0 +1,49 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.app{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px;
+}
+
+.claro{
+    background-color: #f2f2f2;
+}
+
+button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin: 30px;
+}
+button:hover{
+    background-color: #45a049;
+}
+button:active{
+    background-color: #72cf77;
+    transform: translateY(4px);
+}
+
+p{
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 30px;
+}
+
+input{
+    background-color:  #51d3ff;
+    height: 20px;
+    cursor: pointer;
+}
